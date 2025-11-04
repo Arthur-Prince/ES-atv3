@@ -1,7 +1,7 @@
-# ES-atv3
-atividade 3 de ES
+# MAC0332 - Engenharia de Software
+### Atividade 3
 
-integrantes do grupo:
-Arthur Prince
-Andre Luiz Batista Bueno
-Kim Kakeya Vilhena de Carvalho
+Integrantes do grupo:
+- Arthur Prince
+- Andre Luiz Batista Bueno
+- Kim Kakeya Vilhena de Carvalho
