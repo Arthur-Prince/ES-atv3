@@ -4,8 +4,18 @@ def sao_anagramas(string1, string2):
 
 
 def cifra_de_cesar(texto, deslocamento):
-    # TODO: Implementar a lógica
-    pass
+    resultado = ""
+    
+    for char in texto:
+        if char.isalpha():
+            base = ord('A') if char.isupper() else ord('a')
+            deslocamento_real = (ord(char) - base + deslocamento) % 26
+            char_cifrado = chr(deslocamento_real + base)
+            resultado += char_cifrado
+        else:
+            resultado += char
+    
+    return resultado
 
 
 def valida_cpf(cpf_string):
