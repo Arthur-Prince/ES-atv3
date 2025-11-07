@@ -1,7 +1,15 @@
 def sao_anagramas(string1, string2):
-    # TODO: Implementar a lógica
-    pass
-
+    x = [0] * len(string1)
+    for i in range(len(string1)):
+        found = False
+        for j in range(len(string2)):
+            if string1[i] == string2[j] and x[j] == 0:
+                x[j] = 1
+                found = True
+                break
+        if not found:
+            return False
+    return True
 
 def cifra_de_cesar(texto, deslocamento):
     resultado = ""
