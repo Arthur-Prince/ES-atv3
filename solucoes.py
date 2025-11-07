@@ -1,10 +1,14 @@
 def sao_anagramas(string1, string2):
-    x = [0] * len(string1)
+    if string1 is None or string2 is None:
+        return False
+    if len(string1) != len(string2):
+        return False
+    matches_ja_feitos = [0] * len(string1)
     for i in range(len(string1)):
         found = False
         for j in range(len(string2)):
-            if string1[i] == string2[j] and x[j] == 0:
-                x[j] = 1
+            if string1[i] == string2[j] and matches_ja_feitos[j] == 0:
+                matches_ja_feitos[j] = 1
                 found = True
                 break
         if not found:
